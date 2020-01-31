@@ -13,7 +13,7 @@ tramp
 flycheck_*.el
 
 # Makefile for compiling files
-makefile
+Makefile
 
 # Objects directory where to find the object files for compile
 obj/
