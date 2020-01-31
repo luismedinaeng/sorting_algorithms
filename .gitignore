@@ -1,0 +1,23 @@
+### Emacs ###
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Flycheck
+flycheck_*.el
+
+# Makefile for compiling files
+makefile
+
+# Objects directory where to find the object files for compile
+obj/
+
+# Test files
+pruebas/
+main_pruebas.c
