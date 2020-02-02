@@ -25,4 +25,8 @@ void print_list(const listint_t *list);
 /* Sorting algorithms functions */
 void selection_sort(int *array, size_t size);
 
+void quick_sort(int *array, size_t size);
+void quick_sort_recursion(int *array, size_t i_lo, size_t i_hi, size_t s);
+size_t quick_partition(int *array, size_t i_lo, size_t i_hi, size_t s);
+
 #endif /* SORT_H */
