@@ -28,7 +28,7 @@ void quick_sort_recursion(int *array, size_t i_lo, size_t i_hi, size_t s)
 {
 	size_t p;
 
-	if (i_lo + 1 < i_hi)
+	if (i_lo < i_hi)
 	{
 		p = quick_partition(array, i_lo, i_hi, s);
 		quick_sort_recursion(array, i_lo, p == 0 ? p : p - 1, s);
