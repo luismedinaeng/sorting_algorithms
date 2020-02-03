@@ -9,6 +9,9 @@
  */
 void quick_sort(int *array, size_t size)
 {
+	if (array == NULL || size < 2)
+		return;
+
 	quick_sort_recursion(array, 0, size - 1, size);
 }
 
@@ -17,6 +20,7 @@ void quick_sort(int *array, size_t size)
  * @array: Array to apply the sort
  * @i_lo: Lowest index
  * @i_hi: Highest index
+ * @s: Size of the array
  *
  * Return: Nothing
  */
@@ -37,6 +41,7 @@ void quick_sort_recursion(int *array, size_t i_lo, size_t i_hi, size_t s)
  * @array: Array to apply the sort
  * @i_lo: Lowest index
  * @i_hi: Highest index
+ * @s: Size of the array
  *
  * Return: The final index of the pivot
  */
@@ -60,9 +65,11 @@ size_t quick_partition(int *array, size_t i_lo, size_t i_hi, size_t s)
 			j++;
 		}
 	}
-	array[i_hi] = array[j];
-	array[j] = pivot;
 	if (i_hi != j)
+	{
+		array[i_hi] = array[j];
+		array[j] = pivot;
 		print_array(array, s);
+	}
 	return (j);
 }
