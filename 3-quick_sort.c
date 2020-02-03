@@ -62,6 +62,7 @@ size_t quick_partition(int *array, size_t i_lo, size_t i_hi, size_t s)
 	}
 	array[i_hi] = array[j];
 	array[j] = pivot;
-	i_hi != j ? print_array(array, s) : 1;
+	if (i_hi != j)
+		print_array(array, s);
 	return (j);
 }
