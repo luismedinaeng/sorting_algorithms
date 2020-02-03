@@ -21,7 +21,7 @@ void swap_node(listint_t *a, listint_t *b)
 }
 
 /**
- * insertion_sort_lis - Creates a doubly linked list from an array of integers
+ * insertion_sort_list - Creates a doubly linked list from an array of integers
  * @list: Recieves the List.
  * Return: Nothing
  */
