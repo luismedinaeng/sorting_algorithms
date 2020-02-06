@@ -1,6 +1,6 @@
 # Readme File for sorting algorithms project
 
-0x1B. C - Sorting algorithms & Big O
+# 0x1B. C - Sorting algorithms & Big O
 
 - At least four different sorting algorithms
 - What is the Big O notation, and how to evaluate the time complexity of an algorithm
